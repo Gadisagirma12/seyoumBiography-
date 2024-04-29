@@ -1,0 +1,128 @@
+public class Main {
+    public static void main(String[] args){
+    //start coding
+    }
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seyoum Girma Lenjiso - Personal Website</title>
+<style>
+  /* Base styles */
+  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
+  .container { max-width: 1200px; margin: auto; padding: 20px; }
+  h1, h2, h3 { margin: 0.5em 0; }
+  p { margin: 1em 0; }
+  a { text-decoration: none; }
+  button { cursor: pointer; }
+
+  /* Dark & Bright scheme for header */
+  header { background-color: #333; color: #f0f0f0; padding: 20px 0; text-align: center; }
+  header a { color: #74f0ed; }
+  header a:hover { color: #ea445a; }
+
+  /* Earthy Tones scheme for biography section */
+  #bio { background-color: #172d13; color: #fff; padding: 40px 20px; }
+  #bio h2 { color: #6bb77b; }
+
+  /* Soft & Engaging scheme for resume section */
+  #resume { background-color: #fdf5df; color: #333; padding: 40px 20px; }
+  #resume h2 { color: #5ebec4; }
+  #resume h3 { color: #f92c85; }
+
+  /* Contact section with Dark & Bright scheme */
+  #contact { background-color: #333; color: #f0f0f0; padding: 40px 20px; }
+  #contact form { max-width: 600px; margin: auto; }
+  #contact input, #contact textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: none; }
+  #contact button { background-color: #74f0ed; color: #333; padding: 10px 20px; border: none; }
+
+  /* Footer with Earthy Tones scheme */
+  footer { background-color: #172d13; color: #6bb77b; text-align: center; padding: 20px 0; }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+  }
+
+  /* Hover Effects */
+  button:hover, a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  /* Keyframe Animations */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Seyoum Girma Lenjiso</h1>
+      <nav>
+        <a href="#bio">Biography</a> |
+        <a href="#resume">Resume</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="bio" class="container">
+    <h2>Biography</h2>
+    <p>...</p>
+  </section>
+
+  <section id="resume" class="container">
+    <h2>Resume</h2>
+    <h3>Contact Information</h3>
+    <p>...</p>
+    <!-- Add more resume details here -->
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <form>
+      <!-- Contact form elements here -->
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Seyoum Girma Lenjiso</p>
+  </footer>
+
+  <script>
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Dynamic Content Loading (Example)
+    // function loadContent() {
+    //   // AJAX call to load content dynamically
+    // }
+
+    // Animations on Scroll (Example using AOS library)
+    // AOS.init({
+    //   duration: 1200,
+    // });
+  </script>
+</body>
+</html>
+
